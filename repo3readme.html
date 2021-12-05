@@ -1,3 +1,45 @@
 #Repo 3
 
 This is repo 3.
+
+--------------------------
+Changes after uploading to github live :
+PS C:\Users\Maitreya\OneDrive\Desktop\git\repo3local> git init
+Initialized empty Git repository in C:/Users/Maitreya/OneDrive/Desktop/git/repo3local/.git/
+PS C:\Users\Maitreya\OneDrive\Desktop\git\repo3local> git status
+On branch master
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        repo3readme.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\Maitreya\OneDrive\Desktop\git\repo3local> git add .
+PS C:\Users\Maitreya\OneDrive\Desktop\git\repo3local> git status
+On branch master
+No commits yet
+
+Changes to be committed:
+        new file:   repo3readme.html
+
+PS C:\Users\Maitreya\OneDrive\Desktop\git\repo3local> git commit -m "Repo3local" -m "Uploading local directory 
+to github repo live"
+[master (root-commit) eeefa89] Repo3local
+ 1 file changed, 3 insertions(+)
+ create mode 100644 repo3readme.html
+PS C:\Users\Maitreya\OneDrive\Desktop\git\repo3local> git push
+fatal: No configured push destination.
+
+and then push using the remote name
+
+    git push <name>
+
+PS C:\Users\Maitreya\OneDrive\Desktop\git\repo3local> git remote add origin https://github.com/maitreyaz/repo3.git
+PS C:\Users\Maitreya\OneDrive\Desktop\git\repo3local> git push origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 272 bytes | 272.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/maitreyaz/repo3.git
+ * [new branch]      master -> master
+PS C:\Users\Maitreya\OneDrive\Desktop\git\repo3local> 
